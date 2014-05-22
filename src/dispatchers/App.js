@@ -11,7 +11,7 @@
     var AppState = require("../stores/AppState");
     var AppDispatcher = new flux.Dispatcher();
 
-    AppDispatcher.register("load", function(dependencies) {
+    AppDispatcher.register("loadMiddleware", function(dependencies) {
         return Promise.all(
             dependencies.map(function(name) {
                 return Loader.load(name);
