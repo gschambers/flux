@@ -5,6 +5,7 @@
     var React = require("react");
     var AppState = require("../proxies/AppState");
     var AppData = require("../proxies/AppData");
+    var AppDispatcher = require("../dispatchers/App");
 
     var AppView = React.createClass({
         componentDidMount: function() {
