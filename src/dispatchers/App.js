@@ -15,7 +15,7 @@
         return Promise.all(
             dependencies.map(function(name) {
                 return Loader.load(name);
-            })
+            });
         );
     });
 
